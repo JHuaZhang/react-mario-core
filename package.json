@@ -1,0 +1,47 @@
+{
+  "name": "mario-core",
+  "version": "1.0.0",
+  "description": "基于react-antd-xform的低代码组件注册器",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "antd",
+    "xform",
+    "lowcode",
+    "form-builder"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "antd": ">=5.0.0",
+    "mobx": ">=6.0.0",
+    "mobx-react-lite": ">=3.0.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "antd": "^5.12.0",
+    "mobx": "^6.12.0",
+    "mobx-react-lite": "^4.0.5",
+    "react": "^18.2.0",
+    "react-antd-xform": "1.0.12-beta.2",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0"
+  }
+}
