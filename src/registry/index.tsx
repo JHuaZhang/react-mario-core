@@ -1,5 +1,6 @@
 import React, { createContext, useContext, ReactNode, useRef } from 'react';
 import type { ComponentConfig, ComponentRegistryConfig } from '@/types';
+import { initializeDefaultComponents } from '@/lib/initialize';
 
 class ComponentRegistry {
   private components: Map<string, ComponentConfig>;
@@ -75,6 +76,9 @@ export const ComponentProvider: React.FC<ComponentProviderProps> = ({
   if (!hasRegistered.current && components.length > 0) {
     registry.registerBatch(components);
     hasRegistered.current = true;
+  }
+  if (!hasRegistered.current && components.length === 0) {
+    initializeDefaultComponents();
   }
 
   return (

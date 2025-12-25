@@ -12,16 +12,12 @@ const DEMO_CONFIG = [
     name: 'username',
     component: 'input',
     label: '用户名',
-    help: '请输入用户名，至少3个字符',
+    help: '请输入用户名',
     required: true,
     requiredMessage: '用户名不能为空',
     componentProps: {
       placeholder: '请输入用户名',
     },
-    rules: [
-      { required: true, message: '用户名不能为空' },
-      { min: 3, message: '至少3个字符' },
-    ],
   },
   {
     name: 'projectType',
@@ -36,6 +32,81 @@ const DEMO_CONFIG = [
       ],
     },
   },
+  {
+    name: 'like',
+    component: 'multiSelect',
+    label: '爱好',
+    componentProps: {
+      placeholder: '请选择项目类型',
+      options: [
+        { label: '苹果', value: 'apple' },
+        { label: '移动应用', value: 'mobile' },
+        { label: '桌面应用', value: 'desktop' },
+      ],
+    },
+  },
+  {
+    name: 'gender',
+    component: 'radio',
+    label: '性别',
+    componentProps: {
+      options: [
+        { label: '男性', value: 'general' },
+        { label: '女性', value: 'female' },
+      ],
+    },
+  },
+  {
+    name: 'hobby',
+    component: 'checkbox',
+    label: '爱好',
+    componentProps: {
+      options: [
+        { label: '苹果', value: 'apple' },
+        { label: '香蕉', value: 'banana' },
+      ],
+    },
+  },
+  {
+    name: 'birthday',
+    component: 'datePicker',
+    label: '生日',
+  },
+  {
+    name: 'birthdayRange',
+    component: 'dateRangePicker',
+    label: '生日范围',
+  },
+  {
+    name: 'age',
+    component: 'slider',
+    label: '年龄',
+  },
+  {
+    name: 'ages',
+    component: 'inputNumber',
+    label: '年龄',
+  },
+  {
+    name: 'desc',
+    component: 'textArea',
+    label: '描述',
+  },
+  {
+    name: 'switch',
+    component: 'switch',
+    label: '开关',
+  },
+  {
+    name: 'time',
+    component: 'timePicker',
+    label: '时间',
+  },
+  {
+    name: 'timeRange',
+    component: 'timeRangePicker',
+    label: '时间范围',
+  }
 ];
 
 const model = new FormModel({});
