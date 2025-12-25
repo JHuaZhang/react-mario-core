@@ -1,6 +1,6 @@
 {
   "name": "react-mario-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于react-antd-xform的低代码组件注册器",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
